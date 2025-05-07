@@ -87,10 +87,10 @@ test('Correct blue hex', () => {
   expect(isHexColor("#0000FF")).toBe(true);
 });
 
-test('Incorrect 2 characters and no #', () => {
+test('Incorrect: 2 characters and no #', () => {
   expect(isHexColor("CC")).toBe(false);
 });
 
-test('Incorrect 7 characters', () => {
-  expect(isHexColor("#FEWDSWDSDWSDWDSDWSDW")).toBe(false);
+test('Incorrect: 7 characters', () => {
+  expect(isHexColor("#FEWDSWDSDWSDWDSDW2SDW")).toBe(false);
 });
