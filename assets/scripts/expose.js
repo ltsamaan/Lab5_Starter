@@ -33,7 +33,7 @@ function init() {
   const volume = document.getElementById("volume");
   const volume_img = document.querySelector("img[alt='Volume level 2']");
 
-  volume.addEventListener('change', function() {
+  volume.addEventListener('input', function() {
     if (volume.value == 0) {
       volume_img.src = "assets/icons/volume-level-0.svg";
       volume_img.alt = "Mute Icon";
